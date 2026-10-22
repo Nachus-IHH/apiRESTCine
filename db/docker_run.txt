@@ -1,0 +1,12 @@
+-- Hernandez Hernandez Ignacio - 23200144
+-- Lara Cruz Brandon Javier - 23200146
+-- Butanda Carrillo Cristina - 23200138
+
+sudo docker run --name fs_exa2 \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=cine \
+  -p 3307:3306 \
+  -d mysql:8.0
+
+sudo docker exec -it fs_exa2 mysql -u root -proot
+
